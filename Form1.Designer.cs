@@ -28,19 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
             button1 = new Button();
+            label1 = new Label();
+            button2 = new Button();
             SuspendLayout();
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label1.ForeColor = Color.Red;
-            label1.Location = new Point(203, 37);
-            label1.Name = "label1";
-            label1.Size = new Size(0, 15);
-            label1.TabIndex = 0;
             // 
             // button1
             // 
@@ -53,13 +44,35 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(165, 37);
+            label1.Name = "label1";
+            label1.Size = new Size(38, 15);
+            label1.TabIndex = 2;
+            label1.Text = "label1";
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.FromArgb(255, 255, 192);
+            button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            button2.Location = new Point(172, 121);
+            button2.Name = "button2";
+            button2.Size = new Size(75, 23);
+            button2.TabIndex = 3;
+            button2.Text = "CLEAR";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(444, 218);
-            Controls.Add(button1);
+            Controls.Add(button2);
             Controls.Add(label1);
+            Controls.Add(button1);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -67,8 +80,8 @@
         }
 
         #endregion
-
-        private Label label1;
         private Button button1;
+        private Label label1;
+        private Button button2;
     }
 }
