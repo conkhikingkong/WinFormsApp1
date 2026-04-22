@@ -31,6 +31,7 @@
             button1 = new Button();
             label1 = new Label();
             button2 = new Button();
+            button3 = new Button();
             SuspendLayout();
             // 
             // button1
@@ -65,11 +66,23 @@
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
+            // button3
+            // 
+            button3.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            button3.Location = new Point(73, 71);
+            button3.Name = "button3";
+            button3.Size = new Size(75, 23);
+            button3.TabIndex = 4;
+            button3.Text = "Hi";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(444, 218);
+            Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(label1);
             Controls.Add(button1);
@@ -83,5 +96,6 @@
         private Button button1;
         private Label label1;
         private Button button2;
+        private Button button3;
     }
 }

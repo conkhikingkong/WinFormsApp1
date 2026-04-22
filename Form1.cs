@@ -18,5 +18,10 @@ namespace WinFormsApp1
         {
             label1.Text = string.Empty;
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            label1.Text = "Hi There";
+        }
     }
 }
